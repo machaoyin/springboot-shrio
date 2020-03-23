@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style type="text/css">
+        #main{
+            width: 400px;
+            margin: 100px auto;
+        }
+        input{
+            border-radius: 5px;
+            width: 200px;
+            height: 20px;
+        }
+        button{
+            margin-left: 30px;
+            width: 80px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="login" method="post">
+            <font color="red" th:text="${msg}"></font><br><br>
+            账号：<input type="text" name="username"><br><br>
+            密码：<input type="password" name="password"><br><br>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+</body>
+</html>
